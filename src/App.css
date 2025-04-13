@@ -2,6 +2,11 @@
   font-size: 70px;
 }
 
+#parentDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
 #form-container{
   background-color: white;
   border-radius: 12px; 
@@ -33,3 +38,28 @@
   width: 330px;
   font-size: 16px;
  }
+
+ table {
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgb(1, 58, 58), 0 0 10px rgb(20, 2, 44), 0 0 12px rgb(0, 89, 255);
+}
+
+th {
+  background-color: #0a0f2c; 
+  font-weight: bold;
+  padding: 0;
+  color: white;
+}
+
+td {  
+  padding: 0;
+  background-color: rgba(14, 0, 12, 0.6);
+}
+th,td{
+  width: 350px;
+  height: 30px;
+  text-align: center;
+  border: 3px solid #6cf;
+  color: #fff;
+  box-sizing: border-box;
+}

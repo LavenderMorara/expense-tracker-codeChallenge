@@ -4,7 +4,7 @@ export const expenses = [
       name: "Groceries",
       description: "Weekly supermarket shopping",
       category: "Food",
-      expense: 75.50,
+      amount: 75.50,
       date: "2025-04-10"
     },
     {
@@ -12,7 +12,7 @@ export const expenses = [
       name: "Internet Bill",
       description: "Monthly broadband payment",
       category: "Utilities",
-      expense: 45.00,
+      amount: 45.00,
       date: "2025-04-05"
     },
     {
@@ -20,7 +20,7 @@ export const expenses = [
       name: "Movie Night",
       description: "Cinema and snacks",
       category: "Entertainment",
-      expense: 30.25,
+      amount: 30.25,
       date: "2025-04-08"
     }
   ];

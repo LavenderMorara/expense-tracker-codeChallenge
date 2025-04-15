@@ -63,3 +63,22 @@ th,td{
   color: #fff;
   box-sizing: border-box;
 }
+
+#searchBar{
+  display: flex;
+  flex-direction: row;
+}
+
+#searchInput{
+  height: 25px;
+  width: 1265px;
+  font-size: 16px;
+  border-radius: 999px;
+  outline: none;
+  box-shadow:  0 0 5px rgb(1, 58, 58), 0 0 10px rgb(20, 2, 44), 0 0 12px rgb(0, 89, 255);
+}
+
+#tableandSearch{
+  display: flex;
+  flex-direction: column;
+}

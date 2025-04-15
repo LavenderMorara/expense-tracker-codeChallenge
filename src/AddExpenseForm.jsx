@@ -1,42 +1,7 @@
-import React,{useState} from 'react'
-import { expenses,generateNextId } from './expenses'
-import ExpenseTable from './ExpenseTable'
 
-const AddExpenseForm = () => {
-    const [formData,setFormData]=useState(expenses)
+const AddExpenseForm = ({handleSubmit, handleChange, newExpense}) => {
+    
 
-    const [newExpense, setNewExpense]=useState({
-        name:"",
-        description:"",
-        category:"",
-        amount:"",
-        date:""
-    })
-
-    function handleSubmit(e){
-        e.preventDefault()
-        const newEntry={
-            id:generateNextId(),
-            name:newExpense.name,
-            description:newExpense.description,
-            category: newExpense.category,
-            amount:newExpense.amount,
-            date:newExpense.date
-        }
-        const updatedExpenses=[...formData,newEntry]
-        setFormData(updatedExpenses)
-        setNewExpense({name:"", description:"", category:"", amount:"", date:""})
-        console.log(updatedExpenses)
-    }
-
-    function handleChange(e){
-        const key=e.target.id
-       
-       const value= e.target.value
-
-       setNewExpense({...newExpense,[key]:value})
-       
-    }
   return (
    <div id="parentDiv"> 
     <div id="form-container">
@@ -51,7 +16,7 @@ const AddExpenseForm = () => {
      type="text"
      onChange={handleChange}
      value={newExpense.name}
-     require
+     required
       />
      <input 
      id="description"
@@ -69,7 +34,7 @@ const AddExpenseForm = () => {
      type="text" 
      onChange={handleChange}
      value={newExpense.category} 
-     required
+    required
      />
      <input 
      id="amount"
@@ -89,26 +54,13 @@ const AddExpenseForm = () => {
      value={newExpense.date}
      required
      />
-     <button
+     <input
      id="submit"
      type="submit"
-     >
-     Submit 
-     </button>
+     value= "Add Expense"
+     />
      </form>
     </div>
-    <ExpenseTable>
-        {formData.map((data)=>(
-            <tr key={data.id}>
-               <td>{data.name}</td>
-               <td>{data.description}</td>
-               <td>{data.category}</td>
-               <td>{data.amount}</td>
-               <td>{data.date}</td>
-            </tr>
-        ))}    
-               
-    </ExpenseTable>
 
    </div>
   )

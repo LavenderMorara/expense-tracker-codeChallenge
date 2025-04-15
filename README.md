@@ -53,16 +53,6 @@ The app runs locally at:
 
 ---
 
-## 📁 Project Structure
-
-```
-src/
-├── components/        // Input form, expense table, etc.
-├── App.jsx            // Main app container
-├── main.jsx           // Entry point
-```
-
----
 
 ## 🧠 Core Logic
 
@@ -80,18 +70,17 @@ It pushes a new object into `formData` state.
 ### 🔍 Filtering Expenses
 
 ```js
-const filteredExpenses = formData.filter((item) =>
-  item.name.toLowerCase().includes(searchTerm.toLowerCase())
-);
+let newItems = formData.filter(expense => expense.name.toLowerCase() === searchTerm.toLowerCase())
 ```
 
 ### 🗑️ Deleting an Expense
 
 ```js
-const deleteExpense = (idToDelete) => {
-  const updated = formData.filter((item) => item.id !== idToDelete);
-  setFormData(updated);
-};
+function deleteExpense(id){
+    const updatedExpenses = formData.filter((item) => item.id !== id);
+    setFormData(updatedExpenses)
+   }
+ 
 ```
 
 Triggered via:

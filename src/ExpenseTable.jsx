@@ -4,7 +4,7 @@ import React from 'react'
 const ExpenseTable = ({formData,setFormData}) => {
   
   function deleteExpense(id){
-    const updatedExpenses = formData.filter((item) => item.id !== id);
+    const updatedExpenses = formData.filter((data) => data.id !== id);
     setFormData(updatedExpenses)
    }
  

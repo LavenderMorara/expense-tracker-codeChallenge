@@ -70,14 +70,18 @@ It pushes a new object into `formData` state.
 ### 🔍 Filtering Expenses
 
 ```js
-let newItems = formData.filter(expense => expense.name.toLowerCase() === searchTerm.toLowerCase())
+ const handleSearchTerm =(e)=>{
+    e.preventDefault()
+    let newItems = formData.filter(expense => expense.name.toLowerCase() === searchTerm.toLowerCase())
+    setFormData(newItems)
+    }
 ```
 
 ### 🗑️ Deleting an Expense
 
 ```js
 function deleteExpense(id){
-    const updatedExpenses = formData.filter((item) => item.id !== id);
+    const updatedExpenses = formData.filter((data) => data.id !== id);
     setFormData(updatedExpenses)
    }
  

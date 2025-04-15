@@ -1,19 +1,10 @@
-here's the link to the deployed site-https://expense-tracker-code-challenge-sable.vercel.app/
 
-Perfect — here’s your polished `README.md` with:
 
-- ✅ Your updated **live demo** link  
-- ✅ Restored **emojis**  
-- ✅ Clean markdown with helpful descriptions  
-
----
-
-```markdown
 # 💼 Expense Tracker App (Vite + React)
 
-A clean, beginner-friendly **Expense Tracker App** built with **Vite** and **React**. Track your expenses, filter them by name, and delete entries with a click — all in a sleek, neon-styled interface.
 
-🔗 [Live Demo](https://expense-tracker-code-challenge-sable.vercel.app/)
+
+Live Demo - https://expense-tracker-code-challenge-sable.vercel.app/
 
 ---
 

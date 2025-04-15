@@ -33,7 +33,7 @@ const Home = () => {
         const updatedExpenses=[...formData,newEntry]
         setFormData(updatedExpenses)
         setNewExpense({name:"", icon:trashIcon, description:"", category:"", amount:"", date:""})
-        console.log(updatedExpenses)
+        e.target.reset()
     }
 
     function handleChange(e){

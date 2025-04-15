@@ -40,7 +40,7 @@ const AddExpenseForm = ({handleSubmit, handleChange, newExpense}) => {
      id="amount"
      placeholder="Enter amount"
      className="formInput"
-     type="text"
+     type="number"
      onChange={handleChange} 
      value={newExpense.expense}
      required

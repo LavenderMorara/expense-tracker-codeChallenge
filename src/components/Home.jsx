@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { expenses,generateNextId,trashIcon  } from '../Expenses'
 import ExpenseTable from './ExpenseTable'
-import Search from '../Search'
+import Search from './Search'
 import AddExpenseForm from './AddExpenseForm'
 
 

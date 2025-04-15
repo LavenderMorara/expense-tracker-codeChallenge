@@ -91,7 +91,7 @@ Triggered via:
 </button>
 ```
 
----
+
 
 ## 🎨 Styling Highlights
 
@@ -121,8 +121,6 @@ Made with ❤️ by [LavenderMorara](https://github.com/LavenderMorara)
 🔗 [GitHub Repo](https://github.com/LavenderMorara/expense-tracker-codeChallenge)
 
 🌐 [Live Demo](https://expense-tracker-code-challenge-sable.vercel.app/)
-```
 
----
 
 

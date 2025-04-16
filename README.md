@@ -68,12 +68,14 @@ The form collects:
 It pushes a new object into `formData` state.
 
 ### 🔍 Filtering Expenses
+filters either by name or category and can carry out the search with just few characters that make up the word. 
 
 ```js
- const handleSearchTerm =(e)=>{
-    e.preventDefault()
-    let newItems = formData.filter(expense => expense.name.toLowerCase() === searchTerm.toLowerCase())
-    setFormData(newItems)
+const handleSearchTerm =(e)=>{
+        e.preventDefault()
+        let newItems = formData.filter(expense => expense.name.toLowerCase().includes(searchTerm.toLowerCase())||
+        expense.category.toLowerCase().includes(searchTerm.toLowerCase()))
+        setFormData(newItems)
     }
 ```
 

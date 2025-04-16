@@ -64,6 +64,7 @@ const Home = () => {
         <AddExpenseForm  handleSubmit={handleSubmit} handleChange={handleChange} newExpense={newExpense}/>   
         <div id="tableAndSearch">  
         <Search searchTerm ={searchTerm}  handleSearchTerm ={handleSearchTerm} handleOnchangeSearch={handleOnchangeSearch}/>
+        <br />
         <ExpenseTable formData={formData} setFormData={setFormData} />
         </div>
     </div>

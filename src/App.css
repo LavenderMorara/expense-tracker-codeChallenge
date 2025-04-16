@@ -93,3 +93,8 @@ th,td{
   display: flex;
   flex-direction: column;
 }
+
+input{
+  background-color: black;
+  color: white;
+}

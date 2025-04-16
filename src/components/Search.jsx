@@ -8,7 +8,7 @@ const Search = ({searchTerm, handleSearchTerm, handleOnchangeSearch}) => {
     <input 
     type="search" 
     id="searchInput" 
-    placeholder="Search expense"
+    placeholder="Search"
     value={searchTerm}
     onChange={handleOnchangeSearch}
     /></span>

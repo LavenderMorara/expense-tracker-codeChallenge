@@ -6,7 +6,7 @@ const Search = ({searchTerm, handleSearchTerm, handleOnchangeSearch}) => {
     <form id="searchBar" onSubmit={handleSearchTerm}>
     <span>
     <input 
-    type="text" 
+    type="search" 
     id="searchInput" 
     placeholder="Search expense"
     value={searchTerm}

@@ -53,7 +53,8 @@ const Home = () => {
 
     const handleSearchTerm =(e)=>{
         e.preventDefault()
-        let newItems = formData.filter(expense => expense.name.toLowerCase() === searchTerm.toLowerCase())
+        let newItems = formData.filter(expense => expense.name.toLowerCase().includes(searchTerm.toLowerCase())||
+        expense.category.toLowerCase().includes(searchTerm.toLowerCase()))
         setFormData(newItems)
     }
       

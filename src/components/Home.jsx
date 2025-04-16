@@ -60,7 +60,7 @@ const Home = () => {
       
   return (
     <>
-    <div id="ParentDiv">
+    <div id="parentDiv">
         <AddExpenseForm  handleSubmit={handleSubmit} handleChange={handleChange} newExpense={newExpense}/>   
         <div id="tableAndSearch">  
         <Search searchTerm ={searchTerm}  handleSearchTerm ={handleSearchTerm} handleOnchangeSearch={handleOnchangeSearch}/>
